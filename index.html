@@ -4,30 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz</title>
 </head>
 
 <body>
-    <h1>Teste seus conhecimentos</h1>
 
-    <div id="quiz"></div>
+    <main>
+        <h1>Teste seus conhecimentos</h1>
 
-    <template>
-        <div class="quiz-item">
-            <h3>
-                Pegunta 01
-            </h3>
-            <dl>
-                <dt>
-                    <input type="radio" name="item" value="0">
-                    <span>
-                        Resposta A
-                    </span>
-                </dt>
-            </dl>
+        <div id="quiz"></div>
+
+        <template>
+            <div class="quiz-item">
+                <h3>
+                    Pegunta 01
+                </h3>
+                <dl>
+                    <dt>
+                        <input type="radio" name="item" value="0">
+                        <span>
+                            Resposta A
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+        </template>
+
+        <div id="acertos">
+            <strong>Acertos</strong>
+            <span>0 de 10</span>
         </div>
-    </template>
+    </main>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
